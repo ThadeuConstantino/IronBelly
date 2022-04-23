@@ -10,7 +10,7 @@ namespace IronBelly.Enemy
 {
     public class RandomEnemy : Singleton<RandomEnemy>
     {
-        public Vector3 center;
+        private Vector3 center = new Vector3(0,1,5);
         public Vector3 size;
 
         [Header("Initial quantity start in game")]

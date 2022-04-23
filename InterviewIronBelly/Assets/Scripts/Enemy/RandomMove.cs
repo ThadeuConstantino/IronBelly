@@ -17,8 +17,6 @@ namespace IronBelly.Enemy
         private float z;
         private float time;
         private float angle;
-
-        private Vector3 center;
         private Vector3 size;
 
         // Use this for initialization
@@ -28,8 +26,6 @@ namespace IronBelly.Enemy
             z = Random.Range(-velocidadMax, velocidadMax);
             angle = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
             //transform.localRotation = Quaternion.Euler(0, angle, 0);
-
-            center = RandomEnemy.Instance.center;
             size = RandomEnemy.Instance.size;
 
             xMin = (-size.x / 2);
